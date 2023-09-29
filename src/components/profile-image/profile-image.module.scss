@@ -1,0 +1,53 @@
+// Hexagon.module.scss
+$hexagonSize: 100px; // You can adjust the size as per your requirement
+
+.hexagon {
+  width: 0;
+  border-left: #hexagonSize/2 solid transparent;
+  border-right: #hexagonSize/2 solid transparent;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100%;
+
+  & .side {
+    width: $hexagonSize;
+    height: ($hexagonSize * tan(60deg));
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: $hexagonSize/2 solid transparent;
+      border-right: $hexagonSize/2 solid transparent;
+      border-bottom: ($hexagonSize * tan(60deg)) solid white;
+    }
+  }
+
+  & .side1 {
+    transform: rotate(60deg);
+  }
+
+  & .side2 {
+    transform: rotate(120deg);
+  }
+
+  & .side3 {
+    transform: rotate(180deg);
+  }
+
+  & .side4 {
+    transform: rotate(240deg);
+  }
+
+  & .side5 {
+    transform: rotate(300deg);
+  }
+
+  & .side6 {
+    transform: rotate(360deg);
+  }
+}
