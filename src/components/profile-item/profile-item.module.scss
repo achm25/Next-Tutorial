@@ -1,22 +1,32 @@
 @import "src/styles/_variables";
 
 .profileItemContainer {
-  height: 3rem;
-  display: grid;
-  grid-template-areas: 'image detail icon';
+  min-height: 3rem;
+  display: flex;
+  max-width: 15rem;
+
+
+  &.xs {
+    max-width: 24rem;
+  }
 
   .image {
-    grid-area: image;
+    display: flex;
   }
 
   .detail {
-    grid-area: detail;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    margin-left: 0.5rem;
 
     .title {
+      display: flex;
+      gap: 0.25rem;
+      align-items: center;
       font-size: $base-font-size;
       font-weight: 700;
+      word-wrap: break-word;
     }
 
     .description {
@@ -24,10 +34,20 @@
       color: gray;
     }
 
+    span {
+      font-weight: 500;
+      font-size: 0.675rem;
+    }
+
+    b {
+      font-weight: 700;
+      font-size: 0.675rem;
+    }
+
   }
 
   .icon {
-    grid-area: icon;
+    display: flex;
   }
 
   p {
