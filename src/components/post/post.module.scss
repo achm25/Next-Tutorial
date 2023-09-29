@@ -1,0 +1,27 @@
+@import "src/styles/_variables";
+
+.postContainer {
+
+
+
+  > header {
+    display: flex;
+  }
+
+  > main {
+    display: flex;
+  }
+
+  > footer {
+    display: flex;
+    font-size: $post-footer-font-size;
+    font-weight: 700;
+    justify-content: space-between;
+
+    :last-child {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+}
