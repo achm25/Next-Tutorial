@@ -9,10 +9,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from './header.module.scss'
 
-const Header = ({ center, title, subTitle }) => {
+const Header = () => {
     return (
         <>
-            <Navbar expand="lg" className="bg-body-tertiary">
+            <Navbar expand="lg" className={styles.headerContainer}>
                 <Container className={styles.headerContainer}>
                     <Navbar.Brand href="#home">
                         <img

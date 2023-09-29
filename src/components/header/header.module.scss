@@ -1,2 +1,17 @@
+@import "src/styles/_colors";
+@import "src/styles/_variables";
+
 .headerContainer {
+  background-color: $primary;
+  font-size: $base-font-size;
+
+  a {
+    color: $default;
+  }
+
+  button {
+    background-color: $secondary;
+    font-size: $base-font-size;
+  }
+
 }
