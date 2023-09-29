@@ -1,0 +1,37 @@
+@import "src/styles/_variables";
+
+.profileItemContainer {
+  height: 3rem;
+  display: grid;
+  grid-template-areas: 'image detail icon';
+
+  .image {
+    grid-area: image;
+  }
+
+  .detail {
+    grid-area: detail;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-size: $base-font-size;
+      font-weight: 700;
+    }
+
+    .description {
+      font-size: 0.5rem;
+      color: gray;
+    }
+
+  }
+
+  .icon {
+    grid-area: icon;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+}
