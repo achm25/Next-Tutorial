@@ -1,0 +1,7 @@
+@import "src/styles/_variables";
+
+.sidebarContainer {
+  position: absolute;
+  top: $top_bar_height;
+  height: 100%;
+}
