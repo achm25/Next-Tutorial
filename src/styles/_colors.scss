@@ -1,0 +1,81 @@
+$primary-default: #5d5df5;
+
+$secondary-default: #00d1e0;
+
+$error-default: #ED2E7E;
+
+$success-default: #00BA88;
+
+$white: #ffffff;
+$background: #f8f8fb;
+
+
+//todo should color palette be completed
+$primary-1: $primary-default;
+$primaries: (
+        primary-1: $primary-1,
+);
+
+//todo should color palette be completed
+$secondary-1: $secondary-default;
+$secondaries: (
+        secondary-1: $secondary-1,
+);
+
+//todo should color palette be completed
+$green-1: $success-default;
+$success-palette: (
+        green-1: $green-1,
+);
+
+//todo should color palette be completed
+$red-1: $error-default;
+$danger-palette: (
+        red-1: $red-1,
+) !default;
+
+//todo should color palette be completed
+$neutrals-1: $white;
+$neutrals-2: $background;
+$neutrals: (
+        neutrals-1: $neutrals-1,
+        neutrals-2: $neutrals-2,
+);
+
+$primary: $primary-1 !global;
+$secondary: $secondary-1;
+$success: $green-1;
+$danger: $red-1;
+$default: $neutrals-1;
+$body-bg: $neutrals-2;
+
+$theme-colors: (
+        'default': $default,
+        'primary': $primary,
+        'secondary': $secondary,
+        'success': $success,
+);
+
+//:root {
+//  @each $color, $value in $theme-colors {
+//    --#{$color}: #{$value};
+//  }
+//}
+//
+//.root :global {
+//  @each $color, $value in $theme-colors {
+//    --#{$color}: #{$value};
+//  }
+//}
+
+:export {
+  @each $key, $value in $neutrals {
+    #{unquote($key)}: $value;
+  }
+  @each $key, $value in $primaries {
+    #{unquote($key)}: $value;
+  }
+  @each $key, $value in $secondaries {
+    #{unquote($key)}: $value;
+  }
+}
