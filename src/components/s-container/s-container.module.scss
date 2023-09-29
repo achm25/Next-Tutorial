@@ -1,0 +1,18 @@
+@import "src/styles/_variables";
+@import "src/styles/_colors";
+
+.sContainer {
+  background-color: $default;
+  border-radius: $default-border-radius;
+  padding: 1.25rem;
+
+  > header {
+    margin-bottom: 1.5rem;
+
+    .title {
+      font-size: $base-font-size;
+      font-weight: 700;
+    }
+
+  }
+}
