@@ -10,6 +10,7 @@ import dynamic from "next/dynamic";
 import Sidebar from "@/components/sidebar";
 import Post from "@/components/post";
 import Divider from "@/components/divider";
+import SDropdown from "@/components/s-drop-down";
 
 const ProfileItem = dynamic(() => import("@/components/profile-item"), { ssr: false })
 
@@ -35,14 +36,7 @@ export default function Home() {
                 </SContainer>
             </Col>
             <Col className={styles.centerColumn}>
-                <SContainer title="All Updates" >
-                    {/*<div className="dropdown">*/}
-                    {/*    <button className="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenu2"*/}
-                    {/*            data-bs-toggle="dropdown" aria-expanded="false">*/}
-                    {/*        Dropdown*/}
-                    {/*    </button>*/}
-                    {/*</div>*/}
-                </SContainer>
+                <SContainer title="All Updates" headerActionComponent={<SDropdown title='Everything' />} />
                 <Post textContent="Hello everyone!" />
                 <Post imageContent="https://pcmedia.ign.com/pc/image/article/111/1111475/the-history-of-blizzard-20101021031214207.jpg" linkContent="https://www.blizzard.com/en-us/"/>
             </Col>

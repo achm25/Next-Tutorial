@@ -3,13 +3,14 @@ import Container from 'react-bootstrap/Container';
 import styles from './s-container.module.scss';
 import Image from 'next/image';
 
-const SContainer = ({ title, noPadding , children}) => {
+const SContainer = ({ title, noPadding, headerActionComponent , children}) => {
     return (
         <Container className={`${styles.sContainer} ${noPadding && styles.noPadding}`}>
             {
                 title &&
-                <header >
+                <header className={!children && styles.noMarginBottom} >
                     <p className={styles.title}> {title} </p>
+                    {headerActionComponent}
                 </header>
             }
             <content>

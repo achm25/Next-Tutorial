@@ -12,10 +12,18 @@
 
   > header {
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.noMarginBottom {
+      margin-bottom: 0;
+    }
 
     .title {
       font-size: $base-font-size;
       font-weight: 700;
+      margin-bottom: 0;
     }
 
   }

@@ -1,42 +1,23 @@
 'use client'
 import { Sidebar as ReactSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import { BsPerson, BsPeople,BsTrophy, BsStar,BsSuitDiamond,BsCalendar2,BsChatSquareText  ,BsBasket } from "react-icons/bs";
+import styles from './sidebar.module.scss'
 
 const Sidebar = () => {
-
 
     const rootStyles = {
         position: 'absolute',
         top: '60px',
         height: '100%',
-        // 'padding-right': '12px',
-        // 'padding-left': '24px'
+        span: {
+            fontSize: '1rem',
+            color: 'grey',
+        }
     };
 
 
     const menuItemStyles = {
-        root: {
-            // width: '16px',
-    //         display: 'flex',
-    //         'justify-content': 'center',
-    // 'align-items': 'center',
-    // 'align-content': 'center',
-        },
-        // icon: {
-        //     color: themes[theme].menu.icon,
-        //     [`&.${menuClasses.disabled}`]: {
-        //         color: themes[theme].menu.disabled.color,
-        //     },
-        // },
-        // SubMenuExpandIcon: {
-        //     color: '#b6b7b9',
-        // },
-        // subMenuContent: ({ level }) => ({
-        //     backgroundColor:
-        //         level === 0
-        //             ? hexToRgba(themes[theme].menu.menuContent, hasImage && !collapsed ? 0.4 : 1)
-        //             : 'transparent',
-        // }),
+        root: {},
         button: {
             '&:hover': {
                 backgroundColor: '#00d1e0',

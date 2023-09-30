@@ -8,6 +8,7 @@ $success-default: #00BA88;
 
 $white: #ffffff;
 $background: #f8f8fb;
+$input-border-color: #dedee9;
 
 
 //todo should color palette be completed
@@ -36,10 +37,12 @@ $danger-palette: (
 
 //todo should color palette be completed
 $neutrals-1: $white;
-$neutrals-2: $background;
+$neutrals-3: $background;
 $neutrals: (
         neutrals-1: $neutrals-1,
-        neutrals-2: $neutrals-2,
+        neutrals-2: $neutrals-1,
+        neutrals-3: $neutrals-3,
+        neutrals-4: $neutrals-3,
 );
 
 $primary: $primary-1 !global;
@@ -47,7 +50,7 @@ $secondary: $secondary-1;
 $success: $green-1;
 $danger: $red-1;
 $default: $neutrals-1;
-$body-bg: $neutrals-2;
+$body-bg: $neutrals-3;
 
 $theme-colors: (
         'default': $default,
