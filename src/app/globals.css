@@ -53,6 +53,7 @@ body {
   overflow: hidden;
 }
 
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -66,4 +67,16 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+b {
+  font-size: 0.5rem;
+}
+
+span {
+  font-size: 0.5rem;
+}
+
+p, a {
+  font-size: 0.75rem;
 }

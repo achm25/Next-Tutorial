@@ -6,6 +6,10 @@
   border-radius: $default-border-radius;
   padding: 1.25rem;
 
+  &.noPadding {
+    padding: 0;
+  }
+
   > header {
     margin-bottom: 1.5rem;
 
