@@ -12,8 +12,8 @@ import styles from './header.module.scss'
 const Header = () => {
     return (
         <>
-            <Navbar expand="lg" className={styles.headerContainer}>
-                <Container className={styles.headerContainer}>
+            <Navbar expand="sm" className={styles.headerContainer}>
+                <Container fluid className={styles.headerContainer}>
                     <Navbar.Brand href="#home">
                         <img
                         src="/images/header-logo.svg"
@@ -24,32 +24,38 @@ const Header = () => {
                     />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <NavDropdown title="Features" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="More" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            </NavDropdown>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-                <Form inline>
-                    <Row>
-                        <Col >
-                            <Form.Control
-                                type="text"
-                                placeholder="Enter your search here..."
-                                className=" mr-sm-2"
-                            />
+                    <Row className={'w-100'}>
+                        <Col xs={4}>
+                            <Navbar.Collapse>
+                                <Nav className="me-auto">
+                                    <Nav.Link href="#home">Home</Nav.Link>
+                                    <NavDropdown title="Features" id="basic-nav-dropdown">
+                                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                    </NavDropdown>
+                                    <NavDropdown title="More" id="basic-nav-dropdown">
+                                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                    </NavDropdown>
+                                </Nav>
+                            </Navbar.Collapse>
                         </Col>
-                        <Col>
-                            <Button type="submit">Submit</Button>
+                        <Col xs={8}>
+                            <Form inline>
+                                <Row className={'align-items-center w-100'}>
+                                    <Col className={'px-4'} xs={7}>
+                                        <Form.Control
+                                            className={styles.searchBar}
+                                            type="text"
+                                            placeholder="Enter your search here..."
+                                        />
+                                    </Col>
+                                    <Col className={'d-flex justify-content-end'}>
+                                        <Button className={'px-3 py-2'}  type="submit">Login</Button>
+                                    </Col>
+                                </Row>
+                            </Form>
                         </Col>
                     </Row>
-                </Form>
+                </Container>
             </Navbar>
         </>
     );
