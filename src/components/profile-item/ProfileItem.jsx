@@ -24,9 +24,9 @@ const ProfileItem = ({imgSrc, title, description,isVerified, iconSrc,tagTitle ,c
                 {tagTitle && <Tag title={tagTitle} />}
             </p>
             {actionDetail &&  <div>
-                <p>{actionDetail.type}</p>
+                <span>{actionDetail.type} </span>
                 <b>{actionDetail.title}</b>
-                <p>{actionDetail.place_type}</p>
+                <span>{actionDetail.place_type} </span>
                 <b>{actionDetail.place_title}</b>
             </div>}
 

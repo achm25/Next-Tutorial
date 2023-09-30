@@ -11,6 +11,7 @@ import Sidebar from "@/components/sidebar";
 import Post from "@/components/post";
 import Divider from "@/components/divider";
 import SDropdown from "@/components/s-drop-down";
+import DesktopBreakpoint from "@/utils/responsive/desktop_breakpoint";
 
 const ProfileItem = dynamic(() => import("@/components/profile-item"), { ssr: false })
 
@@ -18,7 +19,9 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-        <Sidebar />
+        <DesktopBreakpoint>
+            <Sidebar />
+        </DesktopBreakpoint>
       <Header />
         <content>
            <header className={styles.slide}>

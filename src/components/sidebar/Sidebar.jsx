@@ -5,13 +5,13 @@ import styles from './sidebar.module.scss'
 
 const Sidebar = () => {
 
+
     const rootStyles = {
         position: 'absolute',
         top: '60px',
         height: '100%',
         span: {
             fontSize: '1rem',
-            color: 'grey',
         }
     };
 

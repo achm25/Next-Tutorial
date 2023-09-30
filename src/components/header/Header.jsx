@@ -8,12 +8,13 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from './header.module.scss'
+import DesktopBreakpoint from "@/utils/responsive/desktop_breakpoint";
 
 const Header = () => {
     return (
         <>
             <Navbar expand="sm" className={styles.headerContainer}>
-                <Container fluid className={styles.headerContainer}>
+                <Container fluid className={'d-flex flex-nowrap'}>
                     <Navbar.Brand href="#home">
                         <img
                         src="/images/header-logo.svg"
@@ -23,7 +24,6 @@ const Header = () => {
                         alt="React Bootstrap logo"
                     />
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Row className={'w-100'}>
                         <Col xs={4}>
                             <Navbar.Collapse>
@@ -40,8 +40,8 @@ const Header = () => {
                         </Col>
                         <Col xs={8}>
                             <Form inline>
-                                <Row className={'align-items-center w-100'}>
-                                    <Col className={'px-4'} xs={7}>
+                                <Row className={'align-items-center w-100 flex-nowrap'}>
+                                    <Col className={'px-lg-4'} xs={7}>
                                         <Form.Control
                                             className={styles.searchBar}
                                             type="text"
@@ -55,6 +55,7 @@ const Header = () => {
                             </Form>
                         </Col>
                     </Row>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 </Container>
             </Navbar>
         </>
