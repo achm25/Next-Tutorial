@@ -7,10 +7,10 @@ const SContainer = ({ title, noPadding, headerActionComponent , children}) => {
         <Container className={`${styles.sContainer} ${noPadding ? styles.noPadding : ''}`}>
             {
                 title &&
-                <div className={!children ? styles.noMarginBottom : ''} >
+                <header className={!children ? styles.noMarginBottom : ''} >
                     <p className={styles.title}> {title} </p>
                     {headerActionComponent}
-                </div>
+                </header>
             }
             <main>
                 {children}

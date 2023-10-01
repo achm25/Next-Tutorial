@@ -8,7 +8,6 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from './header.module.scss'
-import DesktopBreakpoint from "@/utils/responsive/desktop_breakpoint";
 
 const Header = () => {
     return (
