@@ -2,7 +2,6 @@
 import styles from './home.module.scss'
 import DesktopBreakpoint from "@/utils/responsive/desktop_breakpoint";
 import Sidebar from "@/components/sidebar";
-import Header from "@/components/header";
 import Slide from "@/components/slide";
 import {Col} from "react-bootstrap";
 import SContainer from "@/components/s-container";
@@ -13,12 +12,7 @@ import ProfileItem from "@/components/profile-item";
 
 const Home = ({height = 1}) => {
     return (
-        <main className={styles.main}>
-            <DesktopBreakpoint>
-                <Sidebar />
-            </DesktopBreakpoint>
-            <Header />
-            <content>
+            <div className={styles.homeContainer}>
                 <header className={styles.slide}>
                     <Slide imgSrc={'images/banner.svg'} />
                 </header>
@@ -47,8 +41,7 @@ const Home = ({height = 1}) => {
                         <Divider height={3}/>
                     </SContainer>
                 </Col>
-            </content>
-        </main>
+            </div>
     );
 };
 
