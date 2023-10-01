@@ -49,7 +49,7 @@ const Header = () => {
                                         />
                                     </Col>
                                     <Col className={'d-flex justify-content-end'}>
-                                        <Button className={'px-3 py-2'}  type="submit">Login</Button>
+                                        <Button className={'px-3 py-2'} >Add User</Button>
                                     </Col>
                                 </Row>
                             </Form>

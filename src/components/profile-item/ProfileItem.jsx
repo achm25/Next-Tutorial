@@ -83,6 +83,7 @@ const ProfileItem = ({imgSrc, title, description,isVerified, iconSrc,tagTitle ,c
                         width={20}
                         height={20}
                         className="object-fit-cover"
+                        alt='image'
                         src={iconSrc}
                     />
                 </div>
