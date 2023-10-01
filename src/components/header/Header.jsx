@@ -8,8 +8,10 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from './header.module.scss'
+import { useRouter } from 'next/navigation'
 
 const Header = () => {
+    const router  = useRouter();
     return (
         <>
             <Navbar expand="sm" className={styles.headerContainer}>
@@ -48,7 +50,7 @@ const Header = () => {
                                         />
                                     </Col>
                                     <Col className={'d-flex justify-content-end'}>
-                                        <Button className={'px-3 py-2'} >Add</Button>
+                                        <Button className={'px-3 py-2'}  onClick={() => router.push('/add-user')}>Add</Button>
                                     </Col>
                                 </Row>
                             </Form>
