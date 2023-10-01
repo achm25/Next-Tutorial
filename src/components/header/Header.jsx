@@ -8,7 +8,6 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from './header.module.scss'
-import DesktopBreakpoint from "@/utils/responsive/desktop_breakpoint";
 
 const Header = () => {
     return (
@@ -49,7 +48,7 @@ const Header = () => {
                                         />
                                     </Col>
                                     <Col className={'d-flex justify-content-end'}>
-                                        <Button className={'px-3 py-2'}  type="submit">Login</Button>
+                                        <Button className={'px-3 py-2'} >Add User</Button>
                                     </Col>
                                 </Row>
                             </Form>

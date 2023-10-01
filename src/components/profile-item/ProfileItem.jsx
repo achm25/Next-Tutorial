@@ -1,13 +1,11 @@
 'use client'
+import React from 'react';
 import styles from './profile-item.module.scss'
-import {Col, Row} from "react-bootstrap";
 import Image from "next/image";
 import ProfileImage from "@/components/profile-image";
 import Tag from "./tag";
 import { MdVerified } from "react-icons/md";
-import MobileBreakpoint from "@/utils/responsive/mobile_breakpoint";
-import TabletBreakpoint from "@/utils/responsive/tablet_breakpoint";
-import DesktopBreakpoint from "@/utils/responsive/desktop_breakpoint";
+import useResponsive from "@/hooks/useResponsive";
 
 const sizes = {
     'md': 'md',
@@ -16,10 +14,12 @@ const sizes = {
 
 const ProfileItem = ({imgSrc, title, description,isVerified, iconSrc,tagTitle ,cardSize=sizes.md, actionDetail}) => {
 
+    const { isDesktop } = useResponsive();
+
     const NotDesktopSizeTitleDetail = () => {
         return <>
             <p className={styles.title}>
-                {title}
+                <p>{title}</p>
                 {isVerified && <MdVerified color='blue'/>}
                 {tagTitle && <Tag title={tagTitle} />}
             </p>
@@ -34,20 +34,20 @@ const ProfileItem = ({imgSrc, title, description,isVerified, iconSrc,tagTitle ,c
     }
 
     const TitleDetail = () => {
-        return <>
-            <DesktopBreakpoint>
-                <p className={styles.title}>
-                    {title}
+        if(isDesktop) {
+            return  <>
+                <div className={styles.title}>
+                    <p> {title}</p>
                     {isVerified && <MdVerified color='blue'/>}
                     {tagTitle && <Tag title={tagTitle} />}
                     {
                         actionDetail &&
-                       <>
-                           <span>{actionDetail.type} </span>
-                           <b>{actionDetail.title} </b>
-                       </>
+                        <>
+                            <span>{actionDetail.type} </span>
+                            <b>{actionDetail.title} </b>
+                        </>
                     }
-                </p>
+                </div>
                 {
                     actionDetail &&
                     <div>
@@ -55,17 +55,10 @@ const ProfileItem = ({imgSrc, title, description,isVerified, iconSrc,tagTitle ,c
                         <b>{actionDetail.place_title} </b>
                     </div>
                 }
-            </DesktopBreakpoint>
-            <TabletBreakpoint>
-                <NotDesktopSizeTitleDetail />
-            </TabletBreakpoint>
-            <MobileBreakpoint>
-                <NotDesktopSizeTitleDetail />
-            </MobileBreakpoint>
-            <p className={styles.description}>
-                {description}
-            </p>
-        </>
+            </>
+        }else {
+            return <NotDesktopSizeTitleDetail />
+        }
     }
 
 
@@ -76,6 +69,9 @@ const ProfileItem = ({imgSrc, title, description,isVerified, iconSrc,tagTitle ,c
             </div>
             <div className={styles.detail}>
                 <TitleDetail />
+                <p className={styles.description}>
+                    {description}
+                </p>
             </div>
             {
                 iconSrc && <div className={styles.icon}>
@@ -88,19 +84,6 @@ const ProfileItem = ({imgSrc, title, description,isVerified, iconSrc,tagTitle ,c
                 </div>
             }
         </div>
-        // <div className={styles.profileItemContainer}>
-        //     <div className={styles.image}>
-        //
-        //     </div>
-        //     <div className={styles.name}>
-        //
-        //     </div>
-        //     {
-        //         iconSrc && <div className={styles.icon}>
-        //
-        //         </div>
-        //     }
-        // </div>
     );
 };
 
