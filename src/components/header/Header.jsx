@@ -48,7 +48,7 @@ const Header = () => {
                                         />
                                     </Col>
                                     <Col className={'d-flex justify-content-end'}>
-                                        <Button className={'px-3 py-2'} >Add User</Button>
+                                        <Button className={'px-3 py-2'} >Add</Button>
                                     </Col>
                                 </Row>
                             </Form>
