@@ -1,8 +1,9 @@
 ## Level 1 completed!
 
-![screencapture-localhost-3000-2023-10-02-23_22_50](https://github.com/achm25/Next_Project_Example/assets/48030194/3ede885b-9965-41b0-a9fb-4b54b3ff5aba)
+![screencapture-localhost-3000-2023-10-02-23_22_50](https://github.com/achm25/Next_Project_Example/assets/48030194/3ede885b-9965-41b0-a9fb-4b54b3ff5aba) 
 
 ![3](https://github.com/achm25/Next_Project_Example/assets/48030194/f5317cb2-a670-4c80-bcc5-32b1de1f0d45)
+
 
 ## Level 2 & 3 completed!
 
