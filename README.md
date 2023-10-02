@@ -1,5 +1,6 @@
 
 ![screencapture-localhost-3000-2023-10-02-23_22_50](https://github.com/achm25/Next_Project_Example/assets/48030194/3ede885b-9965-41b0-a9fb-4b54b3ff5aba)
+![screencapture-localhost-3000-add-user-2023-10-02-23_38_38](https://github.com/achm25/Next_Project_Example/assets/48030194/b1c07036-6cee-4c31-a88c-29aaf03b6c6a)
 
 ## Getting Started
 
