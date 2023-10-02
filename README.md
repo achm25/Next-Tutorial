@@ -6,6 +6,9 @@
 
 ![screencapture-localhost-3000-add-user-2023-10-02-23_38_38](https://github.com/achm25/Next_Project_Example/assets/48030194/b1c07036-6cee-4c31-a88c-29aaf03b6c6a)
 
+![2](https://github.com/achm25/Next_Project_Example/assets/48030194/1894f094-bf08-42cc-abfd-226cc7a01676)
+
+
 ## Getting Started
 
 ( Using at least node v16.20.1 )
