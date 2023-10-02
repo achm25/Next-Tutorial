@@ -7,6 +7,7 @@ import Divider from "@/components/divider";
 import SDropdown from "@/components/s-drop-down";
 import Post from "@/components/post";
 import ProfileItem from "@/components/profile-item";
+import {newestMembers, quests, popularGroups, badges, posts} from "./mock";
 
 const Home = ({height = 1}) => {
     return (
@@ -16,26 +17,33 @@ const Home = ({height = 1}) => {
                 </header>
                 <Col className={styles.leftColumn}>
                     <SContainer title="Newest Member" >
-                        <ProfileItem imgSrc='https://imgv3.fotor.com/images/gallery/Realistic-Male-Profile-Picture.jpg' title='test' description='description' isVerified iconSrc='images/header-logo.svg'/>
-                        <ProfileItem imgSrc='https://imgv3.fotor.com/images/gallery/Realistic-Male-Profile-Picture.jpg' title='test' description='description' iconSrc='images/header-logo.svg'/>
-                        <ProfileItem imgSrc='https://imgv3.fotor.com/images/gallery/Realistic-Male-Profile-Picture.jpg' title='test' description='description' iconSrc='images/header-logo.svg'/>
+                        {
+                            newestMembers.map((data) => <ProfileItem key={data.id} {...data} />)
+                        }
                     </SContainer>
                     <SContainer title="Quests" >
-                        <ProfileItem imgSrc='https://imgv3.fotor.com/images/gallery/Realistic-Male-Profile-Picture.jpg' title='test' description='description' isVerified iconSrc='images/header-logo.svg'/>
+                        {
+                            quests.map((data) => <ProfileItem key={data.id} {...data} />)
+                        }
                         <Divider height={3}/>
                     </SContainer>
                 </Col>
                 <Col className={styles.centerColumn}>
                     <SContainer title="All Updates" headerActionComponent={<SDropdown title='Everything' />} />
-                    <Post textContent="Hello everyone!" />
-                    <Post imageContent="https://pcmedia.ign.com/pc/image/article/111/1111475/the-history-of-blizzard-20101021031214207.jpg" linkContent="https://www.blizzard.com/en-us/"/>
+                    {
+                        posts.map((post) => <Post key={post.id} {...post} />)
+                    }
                 </Col>
                 <Col className={styles.rightColumn}>
                     <SContainer title="Popular Groups" >
-                        <ProfileItem imgSrc='https://imgv3.fotor.com/images/gallery/Realistic-Male-Profile-Picture.jpg' title='test' description='description' isVerified iconSrc='images/header-logo.svg'/>
+                        {
+                            popularGroups.map((data) => <ProfileItem key={data.id} {...data} />)
+                        }
                     </SContainer>
                     <SContainer title="Badges" >
-                        <ProfileItem imgSrc='https://imgv3.fotor.com/images/gallery/Realistic-Male-Profile-Picture.jpg' title='test' description='description' isVerified iconSrc='images/header-logo.svg'/>
+                        {
+                            badges.map((data) => <ProfileItem key={data.id} {...data} />)
+                        }
                         <Divider height={3}/>
                     </SContainer>
                 </Col>
