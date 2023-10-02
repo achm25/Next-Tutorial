@@ -25,4 +25,25 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Project Stracture
 
+code should speak no comments!
+
+![1](https://github.com/achm25/Next_Project_Example/assets/48030194/f61c5f5b-7a08-4f35-ba42-f44f1863eb71)
+
+public: 
+we placed static assessts likes images or fonts here.
+
+components:
+In the "components" folder, you'll find numerous subfolders, each corresponding to a specific component. These subfolders may contain constants, component's styles or child components exclusively used by the parent component.
+
+utils:
+The "utils" folder is reserved for functions that are used by multiple components. By defining these functions here, you ensure that all components have easy access to them
+
+styles:
+the color pallet, global variables and styles are here.
+
+models:
+the models'schema using in mongo db are here
+
+
+
 
