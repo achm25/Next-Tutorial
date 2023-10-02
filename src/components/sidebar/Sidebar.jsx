@@ -1,10 +1,10 @@
 'use client'
 import { Sidebar as ReactSidebar, Menu, MenuItem } from 'react-pro-sidebar';
 import { BsPerson, BsPeople,BsTrophy, BsStar,BsSuitDiamond,BsCalendar2,BsChatSquareText  ,BsBasket } from "react-icons/bs";
-import useResponsive from "@/hooks/useResponsive";
+import {isDesktop} from 'react-device-detect';
 
 const Sidebar = () => {
-    const { isDesktop } = useResponsive();
+
     const rootStyles = {
         position: 'absolute',
         top: '4rem',
@@ -30,7 +30,7 @@ const Sidebar = () => {
     return (
         ///todo should add bottom navigation in mobile size
         <>
-            {isDesktop && <ReactSidebar
+            {isDesktop ? <ReactSidebar
                 width='80px'
                 rootStyles={rootStyles}
             >
@@ -44,7 +44,7 @@ const Sidebar = () => {
                     <MenuItem icon={<BsChatSquareText />} />
                     <MenuItem icon={<BsBasket />} />
                 </Menu>
-            </ReactSidebar>}
+            </ReactSidebar> : ''}
         </>
     );
 };

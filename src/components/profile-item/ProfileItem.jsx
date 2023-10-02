@@ -5,7 +5,7 @@ import Image from "next/image";
 import ProfileImage from "@/components/profile-image";
 import Tag from "./tag";
 import { MdVerified } from "react-icons/md";
-import useResponsive from "@/hooks/useResponsive";
+import {isDesktop} from 'react-device-detect';
 
 const sizes = {
     'md': 'md',
@@ -14,7 +14,7 @@ const sizes = {
 
 const ProfileItem = ({imgSrc, title, description,isVerified, iconSrc,tagTitle ,cardSize=sizes.md, actionDetail}) => {
 
-    const { isDesktop } = useResponsive();
+    // const { isDesktop } = useResponsive();
 
     const NotDesktopSizeTitleDetail = () => {
         return <>
