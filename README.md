@@ -1,6 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+![screencapture-localhost-3000-2023-10-02-23_22_50](https://github.com/achm25/Next_Project_Example/assets/48030194/3ede885b-9965-41b0-a9fb-4b54b3ff5aba)
 
 ## Getting Started
+
+( Using at least node v16.20.1 )
 
 First, run the development server:
 
@@ -20,17 +23,27 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Project Stracture
 
-To learn more about Next.js, take a look at the following resources:
+code should speak no comments!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![1](https://github.com/achm25/Next_Project_Example/assets/48030194/f61c5f5b-7a08-4f35-ba42-f44f1863eb71)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+public: 
+we placed static assessts likes images or fonts here.
 
-## Deploy on Vercel
+components:
+In the "components" folder, you'll find numerous subfolders, each corresponding to a specific component. These subfolders may contain constants, component's styles or child components exclusively used by the parent component.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+utils:
+The "utils" folder is reserved for functions that are used by multiple components. By defining these functions here, you ensure that all components have easy access to them
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+styles:
+the color pallet, global variables and styles are here.
+
+models:
+the models'schema using in mongo db are here
+
+
+
+
