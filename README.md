@@ -1,16 +1,15 @@
 ## Level 1 completed!
 
-[![screencapture-localhost-3000-2023-10-02-23_22_50](https://github.com/achm25/Next_Project_Example/assets/48030194/3ede885b-9965-41b0-a9fb-4b54b3ff5aba) ](https://drive.google.com/file/d/16qPGYbsSEjN8ac6ZCXOqDSqftfoVRfDO/view?usp=sharing)
+![screencapture-localhost-3000-2023-10-02-23_22_50](https://github.com/achm25/Next_Project_Example/assets/48030194/af1d48e3-0787-41d7-88d5-fe2cf4ea2f6c)
 
-[![3](https://github.com/achm25/Next_Project_Example/assets/48030194/f5317cb2-a670-4c80-bcc5-32b1de1f0d45)](https://drive.google.com/file/d/1ONd0D9QV5mih7VtQHhMBDJ0AnYD_BHl8/view?usp=sharing)
+![12](https://github.com/achm25/Next_Project_Example/assets/48030194/ac53258e-1308-413d-a193-615a41410f14)
 
 
 ## Level 2 & 3 completed!
 
-[![screencapture-localhost-3000-add-user-2023-10-02-23_38_38](https://github.com/achm25/Next_Project_Example/assets/48030194/b1c07036-6cee-4c31-a88c-29aaf03b6c6a)](https://drive.google.com/file/d/1fsa4Zg2745Y78DZojlqjXzFzW0_0E-yk/view?usp=sharing)
+![screencapture-localhost-3000-add-user-2023-10-02-23_38_38](https://github.com/achm25/Next_Project_Example/assets/48030194/38b77ed4-9195-4171-87c3-b361224393c2)
 
-[![2](https://github.com/achm25/Next_Project_Example/assets/48030194/1894f094-bf08-42cc-abfd-226cc7a01676)](https://drive.google.com/file/d/1MnTNYc1UkraNGpNRxfKD01sus4QNS9_A/view?usp=sharing)
-
+![2](https://github.com/achm25/Next_Project_Example/assets/48030194/f553e29d-89d9-4b1a-a6e5-bca540bcb8b9)
 
 ## Getting Started
 
@@ -34,27 +33,35 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Project Stracture
+## Project Structure
 
-code should speak no comments!
+<strong> Code should speak not comments! </strong>
 
-![1](https://github.com/achm25/Next_Project_Example/assets/48030194/f61c5f5b-7a08-4f35-ba42-f44f1863eb71)
+![1](https://github.com/achm25/Next_Project_Example/assets/48030194/c675e67f-af1d-4e3d-b52e-e4267081c4b2)
 
-public: 
-we placed static assessts likes images or fonts here.
+<strong> public: </strong>
+we placed static assets like images or fonts here.
 
-components:
-In the "components" folder, you'll find numerous subfolders, each corresponding to a specific component. These subfolders may contain constants, component's styles or child components exclusively used by the parent component.
+<strong> components: </strong>
+In the "components" folder, you'll find numerous subfolders, each corresponding to a specific component. These subfolders may contain constants, component's styles, or child components exclusively used by the parent component.
+![6](https://github.com/achm25/Next_Project_Example/assets/48030194/a96e070a-15d4-4bc4-9608-4dcd38a237ac)
 
-utils:
+<strong> utils: </strong>
 The "utils" folder is reserved for functions that are used by multiple components. By defining these functions here, you ensure that all components have easy access to them
 
-styles:
-the color pallet, global variables and styles are here.
+<strong> styles: </strong>
+the color pallet, global variables, and styles are here.
 
-models:
-the models'schema using in mongo db are here
+![5](https://github.com/achm25/Next_Project_Example/assets/48030194/9115c6bf-29a0-4de6-a6ca-a82c3480c497)
 
+
+<strong> models: </strong>
+the models'schema using in Mongo DB is here.
+
+<strong> layout: </strong>
+we have a header and sidebar that shared between pages so we use in layout.
+
+![4](https://github.com/achm25/Next_Project_Example/assets/48030194/35aeb62b-6434-40f0-8ff3-a8dd20cfa7e7)
 
 
 
