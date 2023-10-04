@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
       <div className={'w-100 h-100'}>
         {children}
       </div>
-
       </body>
     </html>
   )
