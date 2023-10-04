@@ -63,5 +63,10 @@ we have a header and sidebar that shared between pages so we use in layout.
 
 ![4](https://github.com/achm25/Next_Project_Example/assets/48030194/35aeb62b-6434-40f0-8ff3-a8dd20cfa7e7)
 
+<strong> Api: </strong>
+Based on what address you want to call API on we create our folder and define methods that are callable on this address.
+
+![7](https://github.com/achm25/Next_Project_Example/assets/48030194/7d9f0de3-a0f5-40a8-991d-7f1015ba8b3c)
+
 
 
