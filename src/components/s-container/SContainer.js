@@ -4,17 +4,17 @@ import styles from './s-container.module.scss';
 
 const SContainer = ({ title, noPadding, headerActionComponent , children}) => {
     return (
-        <Container className={`${styles.sContainer} ${noPadding ? styles.noPadding : ''}`}>
+        <Container className={`${styles.sContainer} ${noPadding ? styles.noPadding : {}}`}>
             {
                 title &&
-                <header className={!children ? styles.noMarginBottom : ''} >
+                <header className={!children ? styles.noMarginBottom : {}} >
                     <p className={styles.title}> {title} </p>
                     {headerActionComponent}
                 </header>
             }
-            <main>
+            <section>
                 {children}
-            </main>
+            </section>
         </Container>
     );
 };

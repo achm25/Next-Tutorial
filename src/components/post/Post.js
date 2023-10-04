@@ -15,11 +15,11 @@ const Post = ({imageContent,textContent,linkContent, actionDetail, profile , emo
                 <header>
                     <ProfileItem actionDetail={actionDetail} {...profile}/>
                 </header>
-                <main>
+                <section>
                     {textContent && <p>{textContent}</p>}
                     {linkContent && <a href={linkContent} > {linkContent}</a> }
                     {imageContent && <img src={imageContent}/>}
-                </main>
+                </section>
                 <Divider />
                 <footer>
                     <div className={styles.emoji}>

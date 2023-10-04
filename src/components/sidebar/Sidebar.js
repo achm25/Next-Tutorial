@@ -44,7 +44,7 @@ const Sidebar = () => {
                     <MenuItem icon={<BsChatSquareText />} />
                     <MenuItem icon={<BsBasket />} />
                 </Menu>
-            </ReactSidebar> : ''}
+            </ReactSidebar> : <div/>}
         </>
     );
 };
