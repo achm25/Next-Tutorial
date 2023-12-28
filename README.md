@@ -1,3 +1,10 @@
+
+It is just a starting tutorial for next js.
+After finishing I wrote some points to improve this projectAfter finishing it, I found a series of improvements and wrote some tips about it to make it a better project.
+You can use this project and this slide to teach some topics:
+
+[Link](https://docs.google.com/presentation/d/1pRWbE-Gvvwbsh90f_RoJQD0GGuyvndbSh4wH3g4j4ls/edit?usp=sharing)
+
 ## Level 1 completed!
 
 ![screencapture-localhost-3000-2023-10-02-23_22_50](https://github.com/achm25/Next_Project_Example/assets/48030194/af1d48e3-0787-41d7-88d5-fe2cf4ea2f6c)
