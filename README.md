@@ -1,7 +1,7 @@
-
-## It is just a starting tutorial for next js.
-## After finishing I wrote some points to improve this projectAfter finishing it, I found a series of improvements and wrote some tips about it to make it a better project.
-## You can use this project and this slide to teach some topics:
+## Important!
+** It is just a starting tutorial for next js.
+After finishing I wrote some points to improve this projectAfter finishing it, I found a series of improvements and wrote some tips about it to make it a better project.
+You can use this project and this slide to teach some topics: **
 
 [Link](https://docs.google.com/presentation/d/1pRWbE-Gvvwbsh90f_RoJQD0GGuyvndbSh4wH3g4j4ls/edit?usp=sharing)
 
